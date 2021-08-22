@@ -23,7 +23,7 @@ app/Providers/
 bootstrap/
 node_modules/
 public/assets/
-resources/
+resources
 storage/
 tests/
 vendor/
