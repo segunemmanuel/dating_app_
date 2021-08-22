@@ -1,3 +1,2 @@
-@include('layouts.app');
-@include('layouts.guest');
+@include('layouts.admin_header');
 
