@@ -14,8 +14,27 @@ use Illuminate\Support\Facades\Route;
 */    
 
 Route::get('/', function () {
+    return view('index');
+});
+
+
+
+Route::get('/dash', function () {
     return view('dash');
 });
+
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+
+Route::get('/profiles', function () {
+    return view('profile');
+});
+
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
