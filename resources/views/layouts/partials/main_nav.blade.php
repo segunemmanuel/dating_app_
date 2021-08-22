@@ -1,4 +1,4 @@
-    <div id="preloader-active">
+  <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
@@ -18,10 +18,7 @@
                         <div class="col-lg-3 col-md-2">
                             <!-- Logo -->
                             <div class="logo">
-                                <a href="#">
-                                <img src="" alt="">
-                                <h1>Dating app</h1>
-                                </a>   
+                             <h1>Dating app</h1>
                             </div>  
                         </div>
                         <div class="col-lg-9 col-md-9">
@@ -30,25 +27,17 @@
                                 <div class="main-menu">
                                     <nav class="d-none d-lg-block">
                                         <ul id="navigation">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="job_listing.html">Find people </a></li>
-                                            <li><a href="about.html">About</a></li>
-                                          <!--   <li><a href="#">Page</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
-                                                    <li><a href="elements.html">Elements</a></li>
-                                                    <li><a href="job_details.html">job Details</a></li>
-                                                </ul>
-                                            </li> -->
-                                            <li><a href="contact.html">Contact us</a></li>
+                                            <li><a href="{{ route ('/')}}">Home</a></li>
+                                            <li><a href="{{ route('profiles')}}">Profiles </a></li>
+                                            <li><a href="{{ route('about')  }}">About</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>          
                                 <!-- Header-btn -->
                                 <div class="header-btn d-none f-right d-lg-block">
-                                    <a href="{{ route('register') }}" class="btn head-btn1">Register</a>
-                                    <a href="{{ route('login') }}" class="btn head-btn2">Login</a>
+                                    <a href="{{ route('register')}}" class="btn head-btn1">Register</a>
+                                    <a href="#" class="btn head-btn2">Login</a>
                                 </div>
                             </div>
                         </div>
