@@ -24,7 +24,8 @@
                             <!-- Logo -->
                             <div class="logo">
                                 <a href="#">
-                                <img src="assets/img/logo/logo.png" alt="">
+                                <img src="" alt="">
+                                <h1>Dating app</h1>
                                 </a>   
                             </div>  
                         </div>
@@ -230,9 +231,8 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-10">
                         <div class="cv-caption text-center">
-                            <p class="pera1">FEATURED TOURS Packages</p>
-                            <p class="pera2"> Make a Difference with Your Online Resume!</p>
-                            <a href="#" class="border-btn2 border-btn4">Upload your cv</a>
+                            <p class="pera2"> Start connecting today</p>
+                            <a href="#" class="border-btn2 border-btn4">Open an account</a>
                         </div>
                     </div>
                 </div>
@@ -490,7 +490,7 @@
                         <div class="home-blog-single mb-30">
                             <div class="blog-img-cap">
                                 <div class="blog-img">
-                                    <img src="assets/img/blog/home-blog1.jpg" alt="">
+                                    <img src="assets/img/blog/1.jpg" alt="">
                                     <!-- Blog date -->
                                     <div class="blog-date text-center">
                                         <span>24</span>
@@ -509,7 +509,7 @@
                         <div class="home-blog-single mb-30">
                             <div class="blog-img-cap">
                                 <div class="blog-img">
-                                    <img src="assets/img/blog/home-blog2.jpg" alt="">
+                                    <img src="assets/img/blog/2.jpg" alt="">
                                     <!-- Blog date -->
                                     <div class="blog-date text-center">
                                         <span>24</span>
