@@ -17,7 +17,7 @@ yarn-error.log
 app/
 bootstrap/
 node_modules/
-public/
+public/assets/
 resources/
 storage/
 tests/
