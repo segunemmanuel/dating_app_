@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutpageController;
-
+use App\Models\User;
+// use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,14 @@ Route::get('/', function () {
 
 Route::get('/dash', function () {
     return view('dash');
+});
+
+
+Route::get('/view_all_users', function () {
+
+$users=User::all();
+
+    return view('view_all_users',compact('users'));
 });
 
 
