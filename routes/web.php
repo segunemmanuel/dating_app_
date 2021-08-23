@@ -16,7 +16,7 @@ use App\Http\Controllers\AboutpageController;
 */    
 
 Route::get('/', function () {
-    return view('user/index');
+    return view('index');
 });
 
 
@@ -28,13 +28,6 @@ Route::get('/dash', function () {
 
 
 
-
-
-
-
-
-
-
 Route::get('/about',[AboutpageController::class,'about'])->name('about');
 
 Route::get('/profiles',[AboutpageController::class,'profile'])->name('profiles');
@@ -42,7 +35,7 @@ Route::get('/profiles',[AboutpageController::class,'profile'])->name('profiles')
 
 Route::get('/single_profile',[AboutpageController::class,'single_profile'])->name('single_profile');
 
-// Route::get('/',[AboutpageController::class,'home'])->name('/');
+Route::get('/',[AboutpageController::class,'home'])->name('/');
 Route::get('dash',[AboutpageController::class,'admin_dash'])->name('dash');
 
 
