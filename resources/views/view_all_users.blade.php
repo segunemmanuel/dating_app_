@@ -59,7 +59,7 @@
 
          <td>{{ $user->email}}</td>
          <td>{{ $user->created_at->diffForHumans() }}</td>
-         <td> <button type="button" class="btn btn-default">Delete</button></td>
+         <td> <button type="button" class="btn btn-danger">Delete</button></td>
 
 
     </tr>
