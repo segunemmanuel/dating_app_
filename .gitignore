@@ -23,6 +23,8 @@ app/Providers/
 bootstrap/
 node_modules/
 public/assets/
+public/user_files/
+public/user_files/
 storage/
 tests/
 vendor/
