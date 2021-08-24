@@ -2,8 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutpageController;
+use App\Http\Controllers\PostsController;
+
 use App\Models\User;
-// use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +39,20 @@ $users=User::all();
 
 
 
+
+
+Route::post('/create',[PostsController::class,'insert_posts'])->name('create');
+
+
+Route::post('/view_all_users',[AboutpageController::class,'view_all_users'])->name('view_all_users');
+
+// Route::post('/add_new_posts',[AboutpageController::class,'add_new_posts'])->name('add_new_posts');
+
+
+
+
+
+
 Route::get('/about',[AboutpageController::class,'about'])->name('about');
 
 Route::get('/profiles',[AboutpageController::class,'profile'])->name('profiles');
@@ -47,6 +63,12 @@ Route::get('/single_profile',[AboutpageController::class,'single_profile'])->nam
 Route::get('/',[AboutpageController::class,'home'])->name('/');
 Route::get('dash',[AboutpageController::class,'admin_dash'])->name('dash');
 
+
+
+
+// Inserting posts
+
+Route::post('/add_new_posts',[PostsController::class,'insert_posts'])->name('add_new_posts');
 
 
 
