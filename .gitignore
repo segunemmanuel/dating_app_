@@ -14,12 +14,12 @@ yarn-error.log
 /.idea
 /.vscode
 
-app/Actions/
-app/Console/
+app/Actions
+app/Console
 app/Exceptions/
 app/Http
-app/Models/
-app/Providers/
+app/Models
+app/Providers
 bootstrap/
 node_modules/
 public/assets/
