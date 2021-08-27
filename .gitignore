@@ -17,7 +17,7 @@ yarn-error.log
 app/Actions/
 app/Console/
 app/Exceptions/
-app/Http/
+app/Http
 app/Models/
 app/Providers/
 bootstrap/

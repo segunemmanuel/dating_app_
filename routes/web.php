@@ -42,13 +42,7 @@ $users=User::all();
 
 
 // Route::post('/create',[PostsController::class,'insert_posts'])->name('create');
-
-
 Route::post('/view_all_users',[AboutpageController::class,'view_all_users'])->name('view_all_users');
-
-Route::post('/add_new_posts',[PostsController::class,'add_new_posts'])->name('add_new_posts');
-
-
 
 
 

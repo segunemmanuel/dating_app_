@@ -140,7 +140,7 @@
                                 <a href="https://google.com">View</a>
                             </li>
                             <li>
-                                <a href="{{ route('add_new_posts')}}">Add new</a>
+                                <!-- <a href="{{ route('/')}}">Add new</a> -->
                             </li>
                         </ul>
                     </li>
