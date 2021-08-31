@@ -69,17 +69,15 @@ Route::get('/view_all_posts',[PostsController::class,'view_all_posts'])->name('v
 
 // Blog page
 
-Route::get('/blog', function (){
-    return view('blog');
-});
+Route::get('/blog',[AboutpageController::class,'blog'])->name('see_blog');
+
 
 
 
 // Single blog posts
+Route::get('/single_blog/id/{$id}',[AboutpageController::class,'single_blog'])->name('single_blog');
 
-Route::get('/single_blog', function (){
-    return view('single_blog');
-});
+
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

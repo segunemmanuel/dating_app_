@@ -65,7 +65,7 @@
 
   <div class="form-group">
      <label for="">Content</label>
-     <textarea class="form-control" name="post_content" id="ckeditor" name="ckeditor"></textarea>
+     <textarea class="form-control" htmlentities()  name="post_content" id="ckeditor" name="ckeditor"></textarea>
    </div>
 
 
@@ -102,7 +102,7 @@
     <script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
     <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
 <script>
-CKEDITOR.replace( 'ckeditor' );
+// CKEDITOR.replace( 'ckeditor' );
 </script
 
 </body>
