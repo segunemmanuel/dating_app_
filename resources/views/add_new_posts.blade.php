@@ -14,7 +14,14 @@
                         <h1 class="page-header">
                          Add a new blog post
                         </h1>
-                       
+                       @if(session('success'))
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong> {{ session('success')}}</strong> 
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+@endif
 
                        <!--  <ol class="breadcrumb">
                             <li>
@@ -30,7 +37,7 @@
 
 <div class="row">
  
- <form action="" method="POST" role="form">
+ <form action="{{ route('add_new_posts')}}" method="POST" role="form">
  @csrf
    <div class="form-group">
      <label for="">Title</label>

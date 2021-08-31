@@ -137,10 +137,10 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-arrows-v"></i> Posts <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo2" class="collapse">
                             <li>
-                                <a href="https://google.com">View</a>
+                                <a href="{{ route('view_all_posts')}}">View</a>
                             </li>
                             <li>
-                                <!-- <a href="{{ route('/')}}">Add new</a> -->
+                                <a href="{{ route('add_new_posts')}}">Add new</a>
                             </li>
                         </ul>
                     </li>

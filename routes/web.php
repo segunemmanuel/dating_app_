@@ -37,8 +37,11 @@ $users=User::all();
 });
 
 
+Route::get('/add_new_posts', function () {
 
 
+    return view('add_new_posts');
+});
 
 
 // Route::post('/create',[PostsController::class,'insert_posts'])->name('create');
@@ -46,14 +49,10 @@ Route::post('/view_all_users',[AboutpageController::class,'view_all_users'])->na
 
 
 
-
+// General Links
 Route::get('/about',[AboutpageController::class,'about'])->name('about');
-
 Route::get('/profiles',[AboutpageController::class,'profile'])->name('profiles');
-
-
 Route::get('/single_profile',[AboutpageController::class,'single_profile'])->name('single_profile');
-
 Route::get('/',[AboutpageController::class,'home'])->name('/');
 Route::get('dash',[AboutpageController::class,'admin_dash'])->name('dash');
 
@@ -61,10 +60,12 @@ Route::get('dash',[AboutpageController::class,'admin_dash'])->name('dash');
 
 
 // Inserting posts
-
 Route::post('/add_new_posts',[PostsController::class,'insert_posts'])->name('add_new_posts');
 
 
+
+// View all posts admin view
+Route::get('/view_all_posts',[PostsController::class,'view_all_posts'])->name('view_all_posts');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
