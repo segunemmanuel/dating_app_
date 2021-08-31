@@ -45,7 +45,7 @@
             <td>{{$post->post_title}}</td>
             <td>{{$post->post_content}}</td>
             <td>{{$post->post_author}}</td>
-            <td>{{$post->created_at}}</td>
+            <td>{{$post->created_at->diffForHumans()}}</td>
 
         </tr>
         @endforeach

@@ -2,7 +2,7 @@
 
 
    <body>
-    <!-- Preloader Start -->
+    <!-- Preloader Start --> 
       @include('layouts.partials.main_nav')
 
     <main>

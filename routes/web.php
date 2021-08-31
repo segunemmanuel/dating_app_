@@ -67,6 +67,20 @@ Route::post('/add_new_posts',[PostsController::class,'insert_posts'])->name('add
 // View all posts admin view
 Route::get('/view_all_posts',[PostsController::class,'view_all_posts'])->name('view_all_posts');
 
+// Blog page
+
+Route::get('/blog', function (){
+    return view('blog');
+});
+
+
+
+// Single blog posts
+
+Route::get('/single_blog', function (){
+    return view('single_blog');
+});
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
