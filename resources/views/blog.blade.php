@@ -40,7 +40,7 @@
                             </div>
 
                             <div class="blog_details">
-                                <a class="d-inline-block" href="{{ route('single_blog')}}">
+                                <a class="d-inline-block" href="{{ route('single_blog').$post->id}}">
                                     <h2>{{$post->post_title }}}</h2>
                                 </a>
                                 <p>{{ $post->post_content}}</p>
