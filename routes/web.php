@@ -22,8 +22,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-
-
 Route::get('/dash', function () {
     return view('dash');
 });
@@ -38,10 +36,9 @@ $users=User::all();
 
 
 Route::get('/add_new_posts', function () {
-
-
     return view('add_new_posts');
 });
+
 
 
 // Route::post('/create',[PostsController::class,'insert_posts'])->name('create');
@@ -69,13 +66,14 @@ Route::get('/view_all_posts',[PostsController::class,'view_all_posts'])->name('v
 
 // Blog page
 
-Route::get('/blog',[AboutpageController::class,'blog'])->name('see_blog');
+Route::get('/blog',[AboutpageController::class,'blog'])->name('sees_blog');
 
 
 
 
 // Single blog posts
-Route::get('/single_blog/id/{$id}',[AboutpageController::class,'single_blog(10)'])->name('single_blog');
+
+Route::get('/single-blog/{id}',[AboutpageController::class,'Single_blog']);
 
 
 
