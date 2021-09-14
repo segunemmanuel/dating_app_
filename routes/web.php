@@ -73,7 +73,7 @@ Route::get('/blog',[AboutpageController::class,'blog'])->name('sees_blog');
 
 // Single blog posts
 
-Route::get('/single-blog/{id}',[AboutpageController::class,'Single_blog']);
+Route::get('/single_blog',[AboutpageController::class,'Single_blog']);
 
 
 
